@@ -15,35 +15,47 @@
 	<script src="assets/jquery.slides.min.js"></script>
 	<script>
     $(function(){
-        $(".typing").typed({
-            // Waits 1000ms after typing "First"
-            strings: ["# Do the best at work <br># Keep improve the skill"]
-        });
-    });
-    $(function(){
-      $("#slides").slidesjs({
-        width: 940,
-        height: 600,
-        play: {
-      active: true,
-        // [boolean] Generate the play and stop buttons.
-        // You cannot use your own buttons. Sorry.
-      effect: "slide",
-        // [string] Can be either "slide" or "fade".
-      interval: 5000,
-        // [number] Time spent on each slide in milliseconds.
-      auto: true,
-        // [boolean] Start playing the slideshow on load.
-      swap: true,
-        // [boolean] show/hide stop and play buttons
-      pauseOnHover: false,
-        // [boolean] pause a playing slideshow on hover
-      restartDelay: 2500
-        // [number] restart delay on inactive slideshow
-    }
+		$(".typing").typed({
+	        // Waits 1000ms after typing "First"
+	        strings: ["# Focus on the user and all else will follow.<br># It’s best to do one thing really, really well.<br># Fast is better than slow.<br># Democracy on the web works.<br># You don’t need to be at your desk to need an answer.<br># You can make money without doing evil.<br># There’s always more information out there.<br># The need for information crosses all borders.<br># You can be serious without a suit.<br># Great just isn’t good enough."]
+	    });
+
+		$("#slides").slidesjs({
+			width: 940,
+			height: 600,
+			play: {
+			active: true,
+			// [boolean] Generate the play and stop buttons.
+			// You cannot use your own buttons. Sorry.
+			effect: "slide",
+			// [string] Can be either "slide" or "fade".
+			interval: 5000,
+			// [number] Time spent on each slide in milliseconds.
+			auto: true,
+			// [boolean] Start playing the slideshow on load.
+			swap: true,
+			// [boolean] show/hide stop and play buttons
+			pauseOnHover: false,
+			// [boolean] pause a playing slideshow on hover
+			restartDelay: 2500
+			// [number] restart delay on inactive slideshow
+			}
+		});
+
+      $("#cannon").mouseenter(function(){
+      	$(this).attr('src','assets/logo/original-small.png');
+      });
+      $("#cannon").mouseleave(function(){
+      	$(this).attr('src','assets/logo/dark-small.png');
       });
     });
 </script>
+<style>
+	i.fa {
+		margin-right: 5px;
+		color: black;
+	}
+</style>
 </head>
 <body>
 
@@ -66,17 +78,6 @@
 		</div>
 	</div>
 </nav>
-
-<!--
-<header style="margin-top:50px;">
-	<div class="container">
-		<div class="page-header">
-			<h1>Andika Barrera <small class="typing"></small></h1>
-		</div>
-	</div>
-</header>
--->
-
 <section class="slide" style="margin-top:60px;">
 	<div class="container">
 		<div class="row">
@@ -86,6 +87,15 @@
 					<img src="2.jpg" alt="">
 					<img src="3.jpg" alt="">
 					<img src="4.jpg" alt="">
+				</div>
+				<div class="social" style="margin-top:10px;">
+					<a href=""><i class="fa fa-facebook-square fa-2x"></i></a>
+					<a href=""><i class="fa fa-twitter-square fa-2x"></i></a>
+					<a href=""><i class="fa fa-skype fa-2x"></i></a>
+					<a href=""><i class="fa fa-google-plus-square fa-2x"></i></a>
+					<a href=""><i class="fa fa-instagram fa-2x"></i></a>
+					<a href=""><i class="fa fa-html5 fa-2x"></i></a>
+					<a href=""><i class="fa fa-css3 fa-2x"></i></a>
 				</div>
 			</div>
 			<div class="col-md-6">
@@ -99,53 +109,10 @@
 		</div>
 	</div>
 </section>
-
-<!--
-<section class="how">
+<footer>
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-4" align="center">
-				<div class="hubungi">
-					<h3>Hubungi Kami #1</h3>
-					<i class="fa fa-comments fa-5x"></i>
-					<p>Hubungi kami melalui SMS / Telp / eMail / WA / dll (lebih baik SMS karena kami sering diluar). Boleh tanya-tanya dulu :) Jika serius boleh ketemuan dulu atau tanpa ketemuan juga tidak masalah tetap kami catat :)</p>
-				</div>
-			</div>
-			<div class="col-sm-4" align="center">
-				<div class="jaminan">
-					<h3>Berikan jaminan #2</h3>
-					<i class="fa fa-usd fa-5x"></i>
-					<p>Jika deal, lakukan pembayaran DP minimal 25% dari harga paket melalui Transfer atau secara Cash :) Pelunasan dilakukan setelah pemotretan selesai atau ketika menyerahkan hasil foto :)</p>
-				</div>
-			</div>
-			<div class="col-sm-4" align="center">
-				<div class="action">
-					<h3>Rock n Roll #3</h3>
-					<i class="fa fa-calendar fa-5x"></i>
-					<p>Kami siap datang ke tempat acara anda pada tanggal yang ditentukan :) Hasil foto selesai antara 1-2 minggu atau 1 bulan jika memilih paket yang termasuk Album Kolase Magazine (Wedding Book)</p>
-				</div>
-			</div>
-		</div>
+		
 	</div>
-</section>
--->
-<section class="techno">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-3">
-				<img src="canon.png" alt="">
-			</div>
-			<div class="col-xs-3">
-				<img src="adobe.png" alt="">
-			</div>
-			<div class="col-xs-3">
-				<img src="tamron.png" alt="">
-			</div>
-			<div class="col-xs-3">
-				<img src="fujifilm.png" alt="">
-			</div>
-		</div>
-	</div>
-</section>
+</footer>
 </body>
 </html>
